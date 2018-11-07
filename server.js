@@ -16,10 +16,16 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static(__dirname + "/app/public/"));
 
+// Set Handlebars.
+var exphbs = require("express-handlebars");
+
+app.engine("handlebars", exphbs({ defaultLayout: "main" }));
+app.set("view engine", "handlebars");
+
 // ROUTER
 // The below points our server to a series of "route" files
-// require("./app/routing/apiRoutes")(app);
-// require("./app/routing/htmlRoutes")(app);
+var routes = require("./controllers/burgers_controller.js");
+app.use(routes);
 
 // LISTENER
 // The below code effectively "starts" the server
