@@ -18,9 +18,9 @@ router.get("/", function(req, res) {
   
   router.post("/burgers", function(req, res) {
     burger.insertWhere([
-      "burger_name"
+      "burger_name", "devoured"
     ], [
-      req.body.burger_name
+      req.body.burger_name, req.body.devoured
     ], function(result) {
       // Send back the ID of the new burger
       res.json({ id: result.insertId });
@@ -44,6 +44,7 @@ router.get("/", function(req, res) {
     });
   });
   
+
   // Export routes for server.js to use.
   module.exports = router;
   

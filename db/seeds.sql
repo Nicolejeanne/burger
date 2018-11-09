@@ -6,7 +6,7 @@ INSERT INTO burgers (burger_name, devoured)
 VALUES ('Chicken Avocado Burger', true);
 
 INSERT INTO burgers (burger_name, devoured)
-VALUES ("Double Cheddar Bacon Burger", false);
+VALUES ("Double Cheddar Bacon Burger", true);
 
 INSERT INTO burgers (burger_name, devoured)
 VALUES ("Mushroom Swiss Burger", false);
