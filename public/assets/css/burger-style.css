@@ -1,4 +1,39 @@
 body {
-  width: 75%;
-  margin: 0 auto;
+  background-image: url("/assets/images/burger.JPG");
+  background-repeat: repeat-x;
+  background-position: center top;
+  height: 100%;
 }
+h1 {
+  color: #f0c13f;
+  font-family: "Spicy Rice", cursive;
+  text-align: center;
+  font-size: 60px;
+  margin: 10px auto;
+}
+h2 {
+  color: #f1e7bf;
+  font-family: "Poppins", sans-serif;
+  margin: 10px auto;
+}
+.burger-name {
+  color: #f1e7bf;
+  font-family: "Poppins", sans-serif;
+}
+.btn-primary {
+  background-color: #c1c125;
+  color: #ac6300;
+  font-family: "Spicy Rice", cursive;
+  font-size: 20px;
+  border-color: #ac6300;
+  width: 25%;
+  margin: 10px auto;
+}
+h4 {
+  color: #f1e7bf;
+  font-family: "Poppins", sans-serif;
+  margin: 10px;
+}
+/* font-family: 'Spicy Rice', cursive; */
+/* font-family: 'Oswald', sans-serif; */
+/* font-family: 'Poppins', sans-serif; */
