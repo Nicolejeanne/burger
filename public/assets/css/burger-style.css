@@ -11,7 +11,7 @@ h1 {
   font-size: 60px;
   letter-spacing: 4px;
   margin: 10px auto;
-  text-shadow: 3px 3px #ff0000;
+  text-shadow: 3px 3px #a72e2e;
 }
 h2 {
   color: #f1e7bf;
@@ -33,13 +33,14 @@ h2 {
   margin: 10px auto;
 }
 h4 {
-  color: #f1e7bf;
+  color: #f0c13f;
+  font-family: "Spicy Rice", cursive;
   font-weight: 900;
-  font-family: "Poppins", sans-serif;
   margin: 10px;
   font-size: 28px;
-  letter-spacing: 2px;
-  text-decoration: #f1e7bf underline;
+  letter-spacing: 4px;
+  /* text-decoration: #f0c13f underline; */
+  text-shadow: 3px 3px #a72e2e;
 }
 .btn-success {
   background-color: #a72e2e;
@@ -52,9 +53,9 @@ h4 {
 }
 .form-control {
   font-family: "Poppins", sans-serif;
-  background-color: #ac6300;
+  background-color: #f1e7bf;
   border-color: #c1c125;
-  color: #c1c125;
+  color: #ac6300;
   width: 30%;
   margin: 10px;
 }
