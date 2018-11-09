@@ -2,8 +2,8 @@
 USE burgers_db;
 
 -- Insert a set of records.
-INSERT INTO burgers (burger) 
-VALUES ('burger_name', 'devoured');
+INSERT INTO burgers (burger_name, devoured)
+VALUES ('Chicken Avocado Burger', true);
 
 INSERT INTO burgers (burger_name, devoured)
 VALUES ("Double Cheddar Bacon Burger", false);

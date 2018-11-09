@@ -1,4 +1,3 @@
-DROP DATABASE if exists burgers_db;
 CREATE DATABASE burgers_db;
 USE burgers_db;
 
@@ -10,5 +9,3 @@ burger_name varchar(255) NOT NULL,
 devoured boolean NOT NULL default false,
 PRIMARY KEY (id)
 );
-
-SELECT * from burgers;
