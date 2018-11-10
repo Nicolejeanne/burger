@@ -1,28 +1,36 @@
+$(function() {
+        $(".devour-button").on("click", function(event) {
+          var id = $(this).data("id");
+          var newDevour = $(this).data("newdevour");
+          console.log("newDevour is: " + newDevour);
+          var newDevourState = {
+            devoured: newDevour
+          };
 
       // Send the PUT request.
-      $.ajax("/burgers/" + id, {
+      $.ajax("/api/burgers/" + id, {
         type: "PUT",
-        data: newdevouredState
+        data: newDevourState
       }).then(
         function() {
-          console.log("changed devoured to", newdevoured);
+          console.log("changed devoured to", newDevour);
           // Reload the page to get the updated list
           location.reload();
         }
       );
     
   
-    $(".create-form").on("submit", function(event) {
+    $(".btn-primary").on("submit", function(event) {
       // Make sure to preventDefault on a submit event.
       event.preventDefault();
   
       let newBurger = {
-        name: $("#newB").val().trim(),
+        burger_name: $("#newB").val().trim(),
       
       };
       console.log(newBurger);
       // Send the POST request.
-      $.ajax("/burgers", {
+      $.ajax("/api/burgers", {
         type: "POST",
         data: newBurger
       }).then(
